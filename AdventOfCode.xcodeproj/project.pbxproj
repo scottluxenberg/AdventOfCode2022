@@ -86,6 +86,9 @@
 		39C3D0B52755745900B2F989 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3D07C27556D7800B2F989 /* Day1.swift */; };
 		39C3D0B62755746500B2F989 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C3D07A27556CA700B2F989 /* Day.swift */; };
 		39C3D0B92755752000B2F989 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 39C3D0B82755752000B2F989 /* Algorithms */; };
+		C7BBB5582946C8D6003E7DD7 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = C7BBB5572946C8D6003E7DD7 /* Numerics */; };
+		C7BBB55B2946C92D003E7DD7 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = C7BBB55A2946C92D003E7DD7 /* Algorithms */; };
+		C7BBB55D2946C930003E7DD7 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = C7BBB55C2946C930003E7DD7 /* Numerics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BBB5582946C8D6003E7DD7 /* Numerics in Frameworks */,
 				39C3D0B92755752000B2F989 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BBB55D2946C930003E7DD7 /* Numerics in Frameworks */,
+				C7BBB55B2946C92D003E7DD7 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +188,7 @@
 				39C3D06F27556C2F00B2F989 /* AdventOfCode */,
 				39C3D0AD275572BC00B2F989 /* AdventOfCodeTests */,
 				39C3D06E27556C2F00B2F989 /* Products */,
+				C7BBB5592946C92D003E7DD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +275,13 @@
 			path = AdventOfCodeTests;
 			sourceTree = "<group>";
 		};
+		C7BBB5592946C92D003E7DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,6 +300,7 @@
 			name = AdventOfCode;
 			packageProductDependencies = (
 				39C3D0B82755752000B2F989 /* Algorithms */,
+				C7BBB5572946C8D6003E7DD7 /* Numerics */,
 			);
 			productName = AdventOfCode;
 			productReference = 39C3D06D27556C2F00B2F989 /* AdventOfCode */;
@@ -304,6 +319,10 @@
 			dependencies = (
 			);
 			name = AdventOfCodeTests;
+			packageProductDependencies = (
+				C7BBB55A2946C92D003E7DD7 /* Algorithms */,
+				C7BBB55C2946C930003E7DD7 /* Numerics */,
+			);
 			productName = AdventOfCodeTests;
 			productReference = 39C3D0AC275572BC00B2F989 /* AdventOfCodeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -337,6 +356,7 @@
 			mainGroup = 39C3D06427556C2F00B2F989;
 			packageReferences = (
 				39C3D0B72755752000B2F989 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				C7BBB5562946C8D6003E7DD7 /* XCRemoteSwiftPackageReference "swift-numerics" */,
 			);
 			productRefGroup = 39C3D06E27556C2F00B2F989 /* Products */;
 			projectDirPath = "";
@@ -668,6 +688,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		C7BBB5562946C8D6003E7DD7 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -675,6 +703,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 39C3D0B72755752000B2F989 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
+		};
+		C7BBB5572946C8D6003E7DD7 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BBB5562946C8D6003E7DD7 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		C7BBB55A2946C92D003E7DD7 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C3D0B72755752000B2F989 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		C7BBB55C2946C930003E7DD7 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7BBB5562946C8D6003E7DD7 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

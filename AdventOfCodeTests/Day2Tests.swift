@@ -7,13 +7,18 @@ import XCTest
 
 class Day2Tests: XCTestCase {
     let day = Day2()
+    let input = """
+                A Y
+                B X
+                C Z
+                """
 
     func testPart1() throws {
-        debugPrint(day.part1(""))
+        XCTAssertEqual(day.part1(input) as? Int, 15)
     }
 
     func testPart2() throws {
-        debugPrint(day.part2(""))
+        XCTAssertEqual(day.part2(input) as? Int, 12)
     }
 
 }
